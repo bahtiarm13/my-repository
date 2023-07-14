@@ -1,0 +1,4 @@
+package script
+
+import (
+	"bufio"
