@@ -1,2 +1,1 @@
-# my-repository
-my-repository
+It`s repository for my notes
