@@ -20,3 +20,6 @@ import (
 "sync"
 	"text/template"
 "text/template"
+
+	"github.com/itchyny/gojq"
+	"mvdan.cc/sh/v3/shell"
