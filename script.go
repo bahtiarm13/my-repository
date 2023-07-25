@@ -23,3 +23,6 @@ import (
 
 	"github.com/itchyny/gojq"
 	"mvdan.cc/sh/v3/shell"
+)
+
+// Pipe represents a pipe object with an associated [ReadAutoCloser].
