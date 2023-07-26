@@ -26,3 +26,5 @@ import (
 )
 
 // Pipe represents a pipe object with an associated [ReadAutoCloser].
+type Pipe struct {
+	// Reader is the underlying reader.
