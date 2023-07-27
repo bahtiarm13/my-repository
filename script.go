@@ -28,3 +28,9 @@ import (
 // Pipe represents a pipe object with an associated [ReadAutoCloser].
 type Pipe struct {
 	// Reader is the underlying reader.
+Reader         ReadAutoCloser
+	stdout, stderr io.Writer
+
+
+
+	
