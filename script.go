@@ -30,7 +30,7 @@ type Pipe struct {
 	// Reader is the underlying reader.
 Reader         ReadAutoCloser
 	stdout, stderr io.Writer
-
+httpClient     *http.Client
 
 
 	
