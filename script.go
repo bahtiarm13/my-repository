@@ -32,5 +32,6 @@ Reader         ReadAutoCloser
 	stdout, stderr io.Writer
 httpClient     *http.Client
 
+	// because pipe stages are concurrent, protect 'err'
 
 	
