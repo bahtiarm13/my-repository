@@ -33,5 +33,6 @@ Reader         ReadAutoCloser
 httpClient     *http.Client
 
 	// because pipe stages are concurrent, protect 'err'
-
+mu  *sync.Mutex
+	err error
 	
