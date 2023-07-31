@@ -35,4 +35,6 @@ httpClient     *http.Client
 	// because pipe stages are concurrent, protect 'err'
 mu  *sync.Mutex
 	err error
-	
+	}
+
+// Args creates a pipe containing the program's command-line arguments from
