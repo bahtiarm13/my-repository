@@ -36,7 +36,8 @@ httpClient     *http.Client
 mu  *sync.Mutex
 	err error
 	}
-
+	return Slice(os.Args[1:])
+}
 // Args creates a pipe containing the program's command-line arguments from
 // [os.Args], excluding the program name, one per line.
 func Args() *Pipe {
