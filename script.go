@@ -43,3 +43,5 @@ mu  *sync.Mutex
 func Args() *Pipe {
 	return Slice(os.Args[1:])
 }
+
+// Do creates a pipe that makes the HTTP request req and produces the response.
