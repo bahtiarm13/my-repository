@@ -47,3 +47,5 @@ func Args() *Pipe {
 // Do creates a pipe that makes the HTTP request req and produces the response.
 // See [Pipe.Do] for how the HTTP response status is interpreted.
 func Do(req *http.Request) *Pipe {
+return NewPipe().Do(req)
+}
