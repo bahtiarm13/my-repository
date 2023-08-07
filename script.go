@@ -49,3 +49,6 @@ func Args() *Pipe {
 func Do(req *http.Request) *Pipe {
 return NewPipe().Do(req)
 }
+
+// Echo creates a pipe containing the string s.
+func Echo(s string) *Pipe {
