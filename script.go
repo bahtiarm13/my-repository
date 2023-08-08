@@ -52,3 +52,5 @@ return NewPipe().Do(req)
 
 // Echo creates a pipe containing the string s.
 func Echo(s string) *Pipe {
+	return NewPipe().WithReader(strings.NewReader(s))
+}
