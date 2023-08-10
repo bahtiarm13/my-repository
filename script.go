@@ -54,3 +54,5 @@ return NewPipe().Do(req)
 func Echo(s string) *Pipe {
 	return NewPipe().WithReader(strings.NewReader(s))
 }
+
+// Exec creates a pipe that runs cmdLine as an external command and produces
