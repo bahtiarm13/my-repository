@@ -56,3 +56,5 @@ func Echo(s string) *Pipe {
 }
 
 // Exec creates a pipe that runs cmdLine as an external command and produces
+// its combined output (interleaving standard output and standard error). See
+// [Pipe.Exec] for error handling details.
