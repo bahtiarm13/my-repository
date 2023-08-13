@@ -61,3 +61,5 @@ func Echo(s string) *Pipe {
 //
 // Use [Pipe.Exec] to send the contents of an existing pipe to the command's
 // standard input.
+func Exec(cmdLine string) *Pipe {
+	return NewPipe().Exec(cmdLine)
