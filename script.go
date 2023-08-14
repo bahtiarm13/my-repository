@@ -63,3 +63,6 @@ func Echo(s string) *Pipe {
 // standard input.
 func Exec(cmdLine string) *Pipe {
 	return NewPipe().Exec(cmdLine)
+}
+
+// File creates a pipe that reads from the file path.
