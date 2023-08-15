@@ -68,3 +68,5 @@ func Exec(cmdLine string) *Pipe {
 // File creates a pipe that reads from the file path.
 func File(path string) *Pipe {
 	f, err := os.Open(path)
+	if err != nil {
+		return NewPipe().WithError(err)
