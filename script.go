@@ -70,3 +70,6 @@ func File(path string) *Pipe {
 	f, err := os.Open(path)
 	if err != nil {
 		return NewPipe().WithError(err)
+}
+	return NewPipe().WithReader(f)
+}
