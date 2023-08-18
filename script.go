@@ -73,3 +73,5 @@ func File(path string) *Pipe {
 }
 	return NewPipe().WithReader(f)
 }
+
+// FindFiles creates a pipe listing all the files in the directory dir and its
