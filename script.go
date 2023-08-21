@@ -75,3 +75,5 @@ func File(path string) *Pipe {
 }
 
 // FindFiles creates a pipe listing all the files in the directory dir and its
+// subdirectories recursively, one per line, like Unix find(1). If dir doesn't
+// exist or can't be read, the pipe's error status will be set.
