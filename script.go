@@ -80,3 +80,5 @@ func File(path string) *Pipe {
 //
 // Each line of the output consists of a slash-separated path, starting with
 // the initial directory. For example, if the directory looks like this:
+//
+//	test/
