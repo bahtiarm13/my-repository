@@ -84,3 +84,7 @@ func File(path string) *Pipe {
 //	test/
 //	        1.txt
 //	        2.txt
+//
+// the pipe's output will be:
+//
+//	test/1.txt
