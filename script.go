@@ -88,3 +88,5 @@ func File(path string) *Pipe {
 // the pipe's output will be:
 //
 //	test/1.txt
+//	test/2.txt
+func FindFiles(dir string) *Pipe {
