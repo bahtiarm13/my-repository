@@ -90,3 +90,5 @@ func File(path string) *Pipe {
 //	test/1.txt
 //	test/2.txt
 func FindFiles(dir string) *Pipe {
+var paths []string
+	err := filepath.Walk(dir, func(path string, info os.FileInfo, err error) error {
