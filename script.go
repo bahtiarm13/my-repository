@@ -97,3 +97,6 @@ if err != nil {
 }
 		if !info.IsDir() {
 			paths = append(paths, path)
+}
+		return nil
+	})
