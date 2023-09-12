@@ -101,3 +101,5 @@ if err != nil {
 		return nil
 	})
 if err != nil {
+	return NewPipe().WithError(err)
+	}
