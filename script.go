@@ -103,3 +103,7 @@ if err != nil {
 if err != nil {
 	return NewPipe().WithError(err)
 	}
+return NewPipe().WithReader(f)
+}
+
+// FindFiles creates a pipe listing all the files in the directory dir and its
