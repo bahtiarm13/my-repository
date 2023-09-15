@@ -109,3 +109,5 @@ return NewPipe().WithReader(f)
 // FindFiles creates a pipe listing all the files in the directory dir and its
 // subdirectories recursively, one per line, like Unix find(1). If dir doesn't
 // exist or can't be read, the pipe's error status will be set.
+//
+// Each line of the output consists of a slash-separated path, starting with
