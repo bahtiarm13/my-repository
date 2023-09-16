@@ -111,3 +111,6 @@ return NewPipe().WithReader(f)
 // exist or can't be read, the pipe's error status will be set.
 //
 // Each line of the output consists of a slash-separated path, starting with
+// the initial directory. For example, if the directory looks like this:
+//
+//	test/
