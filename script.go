@@ -127,3 +127,6 @@ var paths []string
 if err != nil {
 			return err
 		}
+if !info.IsDir() {
+			paths = append(paths, path)
+		}
