@@ -130,3 +130,7 @@ if err != nil {
 if !info.IsDir() {
 			paths = append(paths, path)
 		}
+return nil
+	})
+	if err != nil {
+		return NewPipe().WithError(err)
