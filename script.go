@@ -134,3 +134,8 @@ return nil
 	})
 	if err != nil {
 		return NewPipe().WithError(err)
+}
+	return Slice(paths)
+}
+
+// Get creates a pipe that makes an HTTP GET request to url, and produces the
