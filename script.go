@@ -141,3 +141,7 @@ return nil
 // Get creates a pipe that makes an HTTP GET request to url, and produces the
 // response. See [Pipe.Do] for how the HTTP response status is interpreted.
 func Get(url string) *Pipe {
+	return NewPipe().Get(url)
+}
+
+// IfExists tests whether path exists, and creates a pipe whose error status
