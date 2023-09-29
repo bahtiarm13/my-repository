@@ -147,3 +147,6 @@ func Get(url string) *Pipe {
 // IfExists tests whether path exists, and creates a pipe whose error status
 // reflects the result. If the file doesn't exist, the pipe's error status will
 // be set, and if the file does exist, the pipe will have no error status. This
+// can be used to do some operation only if a given file exists:
+//
+//	IfExists("/foo/bar").Exec("/usr/bin/something")
