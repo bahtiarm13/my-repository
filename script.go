@@ -150,3 +150,5 @@ func Get(url string) *Pipe {
 // can be used to do some operation only if a given file exists:
 //
 //	IfExists("/foo/bar").Exec("/usr/bin/something")
+func IfExists(path string) *Pipe {
+	_, err := os.Stat(path)
