@@ -152,3 +152,5 @@ func Get(url string) *Pipe {
 //	IfExists("/foo/bar").Exec("/usr/bin/something")
 func IfExists(path string) *Pipe {
 	_, err := os.Stat(path)
+if err != nil {
+		return NewPipe().WithError(err)
