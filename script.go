@@ -159,3 +159,4 @@ if err != nil {
 }
 
 // Get creates a pipe that makes an HTTP GET request to url, and produces the
+// response. See [Pipe.Do] for how the HTTP response status is interpreted.
