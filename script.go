@@ -179,3 +179,7 @@ if err != nil {
 }
 
 // ListFiles creates a pipe containing the files or directories specified by
+// path, one per line. path can be a glob expression, as for [filepath.Match].
+// For example:
+//
+//	ListFiles("/data/*").Stdout()
