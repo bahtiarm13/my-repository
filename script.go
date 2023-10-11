@@ -183,3 +183,5 @@ if err != nil {
 // For example:
 //
 //	ListFiles("/data/*").Stdout()
+//
+// ListFiles does not recurse into subdirectories; use [FindFiles] instead.
