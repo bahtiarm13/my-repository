@@ -185,3 +185,5 @@ if err != nil {
 //	ListFiles("/data/*").Stdout()
 //
 // ListFiles does not recurse into subdirectories; use [FindFiles] instead.
+func ListFiles(path string) *Pipe {
+	if strings.ContainsAny(path, "[]^*?\\{}!") {
