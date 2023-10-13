@@ -187,3 +187,7 @@ if err != nil {
 // ListFiles does not recurse into subdirectories; use [FindFiles] instead.
 func ListFiles(path string) *Pipe {
 	if strings.ContainsAny(path, "[]^*?\\{}!") {
+	fileNames, err := filepath.Glob(path)
+		if err != nil {
+			return NewPipe().WithError(err)
+		}
