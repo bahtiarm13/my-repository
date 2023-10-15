@@ -191,3 +191,6 @@ func ListFiles(path string) *Pipe {
 		if err != nil {
 			return NewPipe().WithError(err)
 		}
+return Slice(fileNames)
+	}
+	entries, err := os.ReadDir(path)
