@@ -194,3 +194,6 @@ func ListFiles(path string) *Pipe {
 return Slice(fileNames)
 	}
 	entries, err := os.ReadDir(path)
+if err != nil {
+		// Check for the case where the path matches exactly one file
+		s, err := os.Stat(path)
