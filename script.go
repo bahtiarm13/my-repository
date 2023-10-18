@@ -202,3 +202,7 @@ if err != nil {
 		}
 		if !s.IsDir() {
 			return Echo(path)
+}
+		return NewPipe().WithError(err)
+	}
+	matches := make([]string, len(entries))
