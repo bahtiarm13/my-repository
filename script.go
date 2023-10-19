@@ -206,3 +206,5 @@ if err != nil {
 		return NewPipe().WithError(err)
 	}
 	matches := make([]string, len(entries))
+for i, e := range entries {
+		matches[i] = filepath.Join(path, e.Name())
