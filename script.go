@@ -208,3 +208,8 @@ if err != nil {
 	matches := make([]string, len(entries))
 for i, e := range entries {
 		matches[i] = filepath.Join(path, e.Name())
+}
+	return Slice(matches)
+}
+
+// NewPipe creates a new pipe with an empty reader (use [Pipe.WithReader] to
