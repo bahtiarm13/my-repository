@@ -215,3 +215,5 @@ for i, e := range entries {
 // NewPipe creates a new pipe with an empty reader (use [Pipe.WithReader] to
 // attach another reader to it).
 func NewPipe() *Pipe {
+return &Pipe{
+		Reader:     ReadAutoCloser{},
