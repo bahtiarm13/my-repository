@@ -217,3 +217,4 @@ for i, e := range entries {
 func NewPipe() *Pipe {
 return &Pipe{
 		Reader:     ReadAutoCloser{},
+	mu:         new(sync.Mutex),
