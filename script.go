@@ -218,3 +218,9 @@ func NewPipe() *Pipe {
 return &Pipe{
 		Reader:     ReadAutoCloser{},
 	mu:         new(sync.Mutex),
+	stdout:     os.Stdout,
+		httpClient: http.DefaultClient,
+	}
+}
+
+// Post creates a pipe that makes an HTTP POST request to url, with an empty
