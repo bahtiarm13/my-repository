@@ -225,3 +225,5 @@ return &Pipe{
 
 // Post creates a pipe that makes an HTTP POST request to url, with an empty
 // body, and produces the response. See [Pipe.Do] for how the HTTP response
+// status is interpreted.
+func Post(url string) *Pipe {
