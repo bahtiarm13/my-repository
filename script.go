@@ -227,3 +227,7 @@ return &Pipe{
 // body, and produces the response. See [Pipe.Do] for how the HTTP response
 // status is interpreted.
 func Post(url string) *Pipe {
+return NewPipe().Post(url)
+}
+
+// Slice creates a pipe containing each element of s, one per line.
