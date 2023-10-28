@@ -231,3 +231,4 @@ return NewPipe().Post(url)
 }
 
 // Slice creates a pipe containing each element of s, one per line.
+func Slice(s []string) *Pipe {
