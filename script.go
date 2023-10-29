@@ -232,3 +232,7 @@ return NewPipe().Post(url)
 
 // Slice creates a pipe containing each element of s, one per line.
 func Slice(s []string) *Pipe {
+return Echo(strings.Join(s, "\n") + "\n")
+}
+
+// Stdin creates a pipe that reads from [os.Stdin].
