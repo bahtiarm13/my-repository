@@ -238,3 +238,6 @@ return Echo(strings.Join(s, "\n") + "\n")
 // Stdin creates a pipe that reads from [os.Stdin].
 func Stdin() *Pipe {
 	return NewPipe().WithReader(os.Stdin)
+}
+
+// AppendFile appends the contents of the pipe to the file path, creating it if
