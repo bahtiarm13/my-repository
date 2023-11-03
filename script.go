@@ -241,3 +241,6 @@ func Stdin() *Pipe {
 }
 
 // AppendFile appends the contents of the pipe to the file path, creating it if
+// necessary, and returns the number of bytes successfully written, or an
+// error.
+func (p *Pipe) AppendFile(path string) (int64, error) {
