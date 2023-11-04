@@ -244,3 +244,7 @@ func Stdin() *Pipe {
 // necessary, and returns the number of bytes successfully written, or an
 // error.
 func (p *Pipe) AppendFile(path string) (int64, error) {
+	return p.writeOrAppendFile(path, os.O_APPEND|os.O_CREATE|os.O_WRONLY)
+}
+
+// Basename reads paths from the pipe, one per line, and removes any leading
