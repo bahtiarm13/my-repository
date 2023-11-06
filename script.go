@@ -249,3 +249,6 @@ func (p *Pipe) AppendFile(path string) (int64, error) {
 
 // Basename reads paths from the pipe, one per line, and removes any leading
 // directory components from each. So, for example, /usr/local/bin/foo would
+// become just foo. This is the complementary operation to [Pipe.Dirname].
+//
+// If any line is empty, Basename will transform it to a single dot. Trailing
