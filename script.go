@@ -252,3 +252,5 @@ func (p *Pipe) AppendFile(path string) (int64, error) {
 // become just foo. This is the complementary operation to [Pipe.Dirname].
 //
 // If any line is empty, Basename will transform it to a single dot. Trailing
+// slashes are removed. The behaviour of Basename is the same as
+// [filepath.Base] (not by coincidence).
