@@ -254,3 +254,5 @@ func (p *Pipe) AppendFile(path string) (int64, error) {
 // If any line is empty, Basename will transform it to a single dot. Trailing
 // slashes are removed. The behaviour of Basename is the same as
 // [filepath.Base] (not by coincidence).
+func (p *Pipe) Basename() *Pipe {
+	return p.FilterLine(filepath.Base)
