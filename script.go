@@ -256,3 +256,6 @@ func (p *Pipe) AppendFile(path string) (int64, error) {
 // [filepath.Base] (not by coincidence).
 func (p *Pipe) Basename() *Pipe {
 	return p.FilterLine(filepath.Base)
+}
+
+// Bytes returns the contents of the pipe as a []byte, or an error.
