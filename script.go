@@ -261,3 +261,6 @@ func (p *Pipe) Basename() *Pipe {
 // Bytes returns the contents of the pipe as a []byte, or an error.
 func (p *Pipe) Bytes() ([]byte, error) {
 	if p.Error() != nil {
+	return nil, p.Error()
+	}
+	data, err := io.ReadAll(p)
