@@ -264,3 +264,5 @@ func (p *Pipe) Bytes() ([]byte, error) {
 	return nil, p.Error()
 	}
 	data, err := io.ReadAll(p)
+if err != nil {
+		p.SetError(err)
