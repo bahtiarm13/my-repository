@@ -271,3 +271,9 @@ if err != nil {
 }
 
 // Close closes the pipe's associated reader. This is a no-op if the reader is
+// not an [io.Closer].
+func (p *Pipe) Close() error {
+	return p.Reader.Close()
+}
+
+// Column produces column col of each line of input, where the first column is
