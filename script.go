@@ -277,3 +277,4 @@ func (p *Pipe) Close() error {
 }
 
 // Column produces column col of each line of input, where the first column is
+// column 1, and columns are delimited by Unicode whitespace. Lines containing
