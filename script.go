@@ -280,3 +280,5 @@ func (p *Pipe) Close() error {
 // column 1, and columns are delimited by Unicode whitespace. Lines containing
 // fewer than col columns will be skipped.
 func (p *Pipe) Column(col int) *Pipe {
+return p.FilterScan(func(line string, w io.Writer) {
+		columns := strings.Fields(line)
