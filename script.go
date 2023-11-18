@@ -282,3 +282,4 @@ func (p *Pipe) Close() error {
 func (p *Pipe) Column(col int) *Pipe {
 return p.FilterScan(func(line string, w io.Writer) {
 		columns := strings.Fields(line)
+	if col > 0 && col <= len(columns) {
