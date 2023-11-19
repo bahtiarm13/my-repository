@@ -283,3 +283,9 @@ func (p *Pipe) Column(col int) *Pipe {
 return p.FilterScan(func(line string, w io.Writer) {
 		columns := strings.Fields(line)
 	if col > 0 && col <= len(columns) {
+	fmt.Fprintln(w, columns[col-1])
+		}
+	})
+}
+
+// Concat reads paths from the pipe, one per line, and produces the contents of
