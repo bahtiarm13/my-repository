@@ -295,3 +295,5 @@ return p.FilterScan(func(line string, w io.Writer) {
 //
 // This makes it convenient to write programs that take a list of paths on the
 // command line. For example:
+//
+//	script.Args().Concat().Stdout()
