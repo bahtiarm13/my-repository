@@ -299,3 +299,5 @@ return p.FilterScan(func(line string, w io.Writer) {
 //	script.Args().Concat().Stdout()
 //
 // The list of paths could also come from a file:
+//
+//	script.File("filelist.txt").Concat()
