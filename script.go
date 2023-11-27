@@ -301,3 +301,7 @@ return p.FilterScan(func(line string, w io.Writer) {
 // The list of paths could also come from a file:
 //
 //	script.File("filelist.txt").Concat()
+//
+// Or from the output of a command:
+//
+//	script.Exec("ls /var/app/config/").Concat().Stdout()
