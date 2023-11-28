@@ -305,3 +305,5 @@ return p.FilterScan(func(line string, w io.Writer) {
 // Or from the output of a command:
 //
 //	script.Exec("ls /var/app/config/").Concat().Stdout()
+//
+// Each input file will be closed once it has been fully read. If any of the
