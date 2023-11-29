@@ -307,3 +307,4 @@ return p.FilterScan(func(line string, w io.Writer) {
 //	script.Exec("ls /var/app/config/").Concat().Stdout()
 //
 // Each input file will be closed once it has been fully read. If any of the
+// files can't be opened or read, Concat will simply skip these and carry on,
