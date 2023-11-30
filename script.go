@@ -308,3 +308,6 @@ return p.FilterScan(func(line string, w io.Writer) {
 //
 // Each input file will be closed once it has been fully read. If any of the
 // files can't be opened or read, Concat will simply skip these and carry on,
+// without setting the pipe's error status. This mimics the behaviour of Unix
+// cat(1).
+func (p *Pipe) Concat() *Pipe {
