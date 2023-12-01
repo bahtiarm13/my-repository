@@ -311,3 +311,5 @@ return p.FilterScan(func(line string, w io.Writer) {
 // without setting the pipe's error status. This mimics the behaviour of Unix
 // cat(1).
 func (p *Pipe) Concat() *Pipe {
+var readers []io.Reader
+	p.FilterScan(func(line string, w io.Writer) {
