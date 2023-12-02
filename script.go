@@ -313,3 +313,4 @@ return p.FilterScan(func(line string, w io.Writer) {
 func (p *Pipe) Concat() *Pipe {
 var readers []io.Reader
 	p.FilterScan(func(line string, w io.Writer) {
+columns := strings.Fields(line)
