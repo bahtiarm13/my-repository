@@ -321,3 +321,5 @@ if col > 0 && col <= len(columns) {
 }
 
 // Concat reads paths from the pipe, one per line, and produces the contents of
+// all the corresponding files in sequence. If there are any errors (for
+// example, non-existent files), these will be ignored, execution will
