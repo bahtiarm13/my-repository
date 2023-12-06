@@ -326,3 +326,6 @@ if col > 0 && col <= len(columns) {
 // continue, and the pipe's error status will not be set.
 //
 // This makes it convenient to write programs that take a list of paths on the
+// command line. For example:
+//
+//	script.Args().Concat().Stdout()
