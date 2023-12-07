@@ -329,3 +329,4 @@ if col > 0 && col <= len(columns) {
 // command line. For example:
 //
 //	script.Args().Concat().Stdout()
+//	script.Args().Concat().Stdout()
