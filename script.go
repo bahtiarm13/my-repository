@@ -330,3 +330,7 @@ if col > 0 && col <= len(columns) {
 //
 //	script.Args().Concat().Stdout()
 //	script.Args().Concat().Stdout()
+//
+// The list of paths could also come from a file:
+//
+//	script.File("filelist.txt").Concat()
